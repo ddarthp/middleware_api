@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patprimo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="http://patprimo.vteximg.com.br/arquivos/patprimoMain.css" rel="stylesheet" type="text/css" />
+    <script>
+        var data = {{JSON.stringify(data)}};
+
+        $(document).ready(function(){
+            $('.thanks h1').html(data.error);
+            if(data.data){
+                var li_data = '<ul>';
+                $.each(data.data, function(k, v){
+                    li_data += "<li>" + k +": "+v +"</li>";
+                });
+
+                li_data+="</ul>";
+                li_data+="</br> <span>Si deseas cambiar la selección deberas hacerlo comunicandote con Servicio al Cliente: 018000 423894 </span>";
+
+                $('.thanks h3').html(li_data);
+            }
+        });
+
+
+
+    </script>
+</head>
+
+<body class="homeNew">
+<header><div class="headerNew"><div class="HeadContainer"><div class="box-logo"><a href="//patprimo.com/" title="Ropa de Moda PatPrimo"><img alt="Logo Patprimo" src="http://patprimo.vteximg.com.br/arquivos/LOGO2017.png"></a></div></div></div></header>
+<style>
+
+    .thanks_background{
+        background: #f1f1f1;
+        width: 100%;
+        position: relative;
+        padding: 50px;color: #FFF;
+    }
+
+
+    .thanks_background .thanks{
+        width: 95%;
+        max-width: 1200px;
+        height: 500px;
+        background:#1a173c;
+        margin:auto;
+        padding: 100px 20px 0 20px;
+        position: relative;
+        text-align: center;
+    }
+
+    .thanks_background h1{
+        color: #fff;
+        letter-spacing: 2px;
+        font-size:30px;
+        font-family: 'Lato-light';
+
+    }
+    .thanks_background hr{
+        width: 100%;
+        max-width: 550px;
+        margin-top:30px ;
+        height: 1px;
+        border: 0.3px;
+        background: #fff;
+
+    }
+    .thanks_background h3 {
+        color:#fff;
+        font-family: 'Lato-light';
+        letter-spacing: 2px;
+        font-size:1rem;
+        margin:60px 0 60px 0 ;
+
+    }
+    .thanks_background span {
+        color:#fff;
+        font-family: 'Lato-light';
+        letter-spacing: 2px;
+        font-size:1rem;
+        margin:60px 0 120px 0 ;
+
+    }
+
+    .thanks_background a{
+        color:#fff;
+        font-family: 'Lato-light';
+        font-size:0.9rem;
+        margin-top:125px;
+        letter-spacing: 1px;
+    }
+
+    .thanks_background a:hover{
+        color:#4f4d65;
+    }
+    @media only screen and (max-width: 767px) {
+
+        .thanks_background h1{
+            font-size:22px;
+        }
+        .thanks_background h3{
+            font-size: 0.8rem;
+            margin:40px 0 80px 0 ;
+        }
+        .thanks_background hr{
+            width: 100%;
+            max-width: 430px;
+
+        }
+
+    }
+
+</style>
+
+
+
+<section class="mainContent thanks_background">
+    <div class="thanks">
+        <h1></h1>
+        <hr/>
+        <h3>Tu caso será resuelto en los siguientes 4 días hábiles.</h3>
+        <a href="http://patprimo.com">ir a Patprimo ></a>
+    </div>
+
+</section>
+
+<footer><div class="contentFooterNew"><div class="footerSup">
+    <div class="boxRedes" itemscope="" itemtype="http://schema.org/Organization"><ul><li><h3>SÍGUENOS EN:</h3></li><link itemprop="url" href="http://www.patprimo.com"><li><a target="_blank" itemprop="sameAs" href="https://www.facebook.com/PATPRIMO.OFICIAL?fref=ts"><img src="http://patprimo.vteximg.com.br/arquivos/ico-facebook-17.png" alt="Patprimo en Facebook"></a></li><li><a target="_blank" itemprop="sameAs" href="https://www.instagram.com/patprimo1957/"><img src="http://patprimo.vteximg.com.br/arquivos/ico-instagram-17.png" alt="Patprimo en Instagram"></a></li><li><a target="_blank" itemprop="sameAs" href="https://www.linkedin.com/company/patprimo"><img src="http://patprimo.vteximg.com.br/arquivos/ico-link-17.png" alt="Patprimo en Linkedin"></a></li></ul></div></div><div class="footerInf"><div class="footerLinks"><h2>
+    SOBRE PATPRIMO
+</h2><ul><li><a href="//patprimo.com/links-interes/trabaja-con-nosotros">
+    TRABAJA CON NOSOTROS
+</a></li><li><a href="//patprimo.com/links-interes/historia-patprimo">
+    NUESTRA HISTORIA
+</a></li><li><a href="">
+    CAMPAÑA
+</a></li></ul></div><div class="footerLinks"><h2>
+    TIENDAS
+</h2><ul><li><a href="//patprimo.com/tiendas">
+    LOCALIZADOR DE TIENDAS
+</a></li><li><a href="#" onclick="zendesk.showForm();" class="contactoEnlace">CONTACTO</a></li></ul></div><div class="footerLinks"><h2>
+    ATENCIÓN AL CLIENTE
+</h2><ul><li><a href="//patprimo.com/links-interes/preguntas-frecuentes">
+    PREGUNTAS FRECUENTES
+</a></li><li><a href="//patprimo.com/links-interes/politicas-terminos-condiciones">
+    ENVÍO Y DEVOLUCIONES
+</a></li></ul></div><div class="footerLinks"><h2>
+    AVISO LEGAL Y COOKIES
+</h2><ul><li><a href="//patprimo.com/links-interes/politicas-terminos-condiciones">
+    TÉRMINOS Y CONDICIONES
+</a></li><li><a href="//patprimo.com/links-interes/politicas-terminos-condiciones">
+    POLÍTICA DE COMPRA
+</a></li></ul></div><div class="footerLinks"><h2>
+    MEDIOS DE PAGO
+</h2><ul><li><img src="http://patprimo.vteximg.com.br/arquivos/pagocon.png" alt=""></li></ul></div></div><div class="boxLegal"><div class="razonSocial"><p>Razón Social: Pash S.A.S - Nit. 860.503.159-1 - Calle 18a # 69b - 06 -  01 8000 423894</p> |
+    <a href="//patprimo.com/links-interes/mapa-sitio">Mapa del sitio</a></div><div class="derechos"><p>Todos los derechos reservados Patprimo 2016 | Empowered by</p><a target="_blank" href="http://www.vtex.com.br"><img src="http://patprimo.vteximg.com.br/arquivos/logoVtex.png" alt="Logo Vtex"></a></div></div>
+</body>

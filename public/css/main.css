@@ -1,0 +1,243 @@
+body {
+          padding-top: 50px;
+          position: relative;
+      }
+      
+      pre {
+          tab-size: 8;
+      }
+      .subcat {
+      	left: 10px;
+      }
+      #searchbox{
+      	top: 13px;
+  	    position: relative;
+  	    left: 5px;	
+      }
+
+      .amount-slider{
+        border:0; 
+        color:#f6931f;
+        background-color: rgba(0,0,0,0); 
+        font-weight:bold;
+      }
+
+      #filters-data {
+       
+        position: relative;
+        top: -25px;
+      }
+
+      .product {
+        text-align: center;
+        margin-top: 3px
+      }
+      .product:hover{
+        background: #eee
+      }
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+
+      .ui-widget-header {
+        background-color: #f6931f;
+      }
+      
+      .footer {
+      	height: 40px;
+	    /*border: 1px solid;*/
+	    position: fixed;
+	    bottom: 0px;
+	    z-index: 9999;
+	    right: 0px;
+	    width: 100%;
+      }
+
+      .footer .cart{
+      	position: absolute;	
+      	right: 5px;
+      	cursor: pointer;
+      }
+
+      .footer .cart .btn-cart{
+      	    font-size: 32px;
+    		color: #333;
+
+      }
+
+      .footer .cart .cart-count {
+      	position: absolute;
+	    right: 0px;
+	    top: -4px;
+	    height: 16px;
+	    width: 16px;
+	    border-radius: 8px;
+	    background: red;
+	    line-height: 16px;
+	    text-align: center;
+	    color: #fff
+      }
+
+      .panel-cart{
+      	    height: 500px;
+		    width: 400px;
+		    position: fixed;
+		    background: #f6931f;
+		    bottom: 0px;
+		    right: 0px;
+		    display: none;
+		    border-radius: 5px
+    
+      }
+
+      .panel-cart .title-cart {
+      	    text-align: center;
+      }
+
+      .panel-cart .content-cart {
+      	position: relative;
+      	margin: 0 auto;
+      	width: 95%;
+      	height: 360px;
+      	overflow: scroll;
+      }
+      .panel-cart .content-cart {
+      	position: relative;
+      	margin: 0 auto;
+      	width: 95%;
+      	height: 360px;
+      	overflow-y: auto;
+    	overflow-x: hidden;
+      }
+
+      .panel-cart .content-cart .item-cart {
+      	background: #fcfdf3;
+    	padding-left: 6px;
+    	margin-bottom: 3px;
+      }
+
+      .panel-cart .content-cart .item-cart .item-name {
+      	font-size: 16px;
+      	font-weight: bold;
+      }
+
+      .panel-cart .content-cart .item-cart .item-info  {
+      	height: 30px
+      }
+      .panel-cart .content-cart .item-cart .item-info div {
+      	float: left;
+      	width: 49%;
+      }
+
+      .panel-cart .content-cart .item-cart .item-info .quantity input {
+      	width: 30px;
+    	text-align: center;	
+      }
+
+      .panel-cart .content-cart .item-cart .item-info .price  {
+      	height: 30px;
+    	line-height: 30px;	
+      }
+      .panel-cart .content-cart .item-cart .item-info span  {
+      	font-weight: bold
+      }
+      .panel-cart .content-cart .item-cart .item-total span  {
+      	font-weight: bold
+      }
+
+      .panel-cart .content-cart .item-cart .item-total {
+      	font-size: 16px;
+      }
+
+      .panel-cart .total {
+      	height: 40px;
+	    line-height: 40px;
+	    margin: 0 auto;
+	    width: 95%;
+	    font-size: 24px;
+	    text-align: right;
+      }
+
+      .panel-cart .total span {
+      	color: #fff;
+      	font-weight: bold
+      }
+
+      .panel-cart .buy {
+      	height: 38px;
+	    line-height: 38px;
+	    margin: 0 auto;
+	    width: 95%;
+	    font-size: 26px;
+	    text-align: center;
+      }
+
+
+      @media screen and (max-width: 768px) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+              top:50px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse.in {
+              width:0;
+          }
+
+          .subcat {
+	      	left: 0px;
+	      }
+	      #searchbox {
+      	    top: 0px;
+    		    position: relative;
+    		    left: 13px;
+    		    width: 91%;
+	      }
+        .sorting-data.col-xs-12 {
+            width: 60%;
+            min-width: 352px
+        }
+        
+      }
+
+      @media screen and (max-width: 480px) {
+          .col-xs-5 {
+            width: 49.666667%;
+        }
+      }
+      @media screen and (min-width: 480px) and (max-width: 990px)  {
+        .col-xs-5 {
+            width: 32.666667%;
+        }
+        .col-xs-4 {
+            width: 30%;
+        }
+        
+      }
+
+      @media screen and (min-width: 992px){
+        .col-md-4 {
+            width: 25%;
+        }
+      }
+
+          /* different techniques for iPad screening */
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+      /* For portrait layouts only */
+    }
+
+
+ 

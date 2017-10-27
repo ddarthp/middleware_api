@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+{% block head %}
+	 {% include '../common/head.html' %}
+{% endblock %}
+
+  </head>
+<body>
+
+    <div class="container">
+
+      <!-- Static navbar -->
+      {% block header%}
+      	{% include '../common/header.html' %}
+      {% endblock%}
+
+      <div class="jumbotron ">      
+		<div class="" >
+		  <h3>{{secctionName}}</h3>
+		     
+		</div> 
+	  </div>
+	  <div id="content">
+		   	{% block content%}
+      	
+      		{% endblock%}
+	   </div>  
+      
+      <!-- Main component for a primary marketing message or call to action -->
+       
+    </div><!-- /container -->
+
+    {% block footer %}
+	 {% include '../common/footer.html' %}
+	{% endblock %}
+	
+
+	
+
+{% block scripts %}
+	 {% include '../common/scripts.html' %}
+{% endblock %}
+    
+  </body>
